@@ -5,6 +5,7 @@ const path = require("path");
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.post("/users", (req, res) => {
   console.log(req.body);
