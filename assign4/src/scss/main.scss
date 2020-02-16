@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #333;
+
+  &__nav {
+    width: 150px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    &-item {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: #fff;
+
+        &:hover {
+          color: #84f2ff;
+        }
+      }
+
+      .active {
+        color: #84f2ff;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 1rem;
+}

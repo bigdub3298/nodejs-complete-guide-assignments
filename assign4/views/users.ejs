@@ -1,0 +1,9 @@
+<%- include('head.ejs') %>
+<body>
+  <%- include('navigation.ejs')%>
+  <% if(products.length !== 0) {%>
+    <h1>List of products</h1>
+  <% } else { %>
+    <h1>No Products!</h1>
+  <% } %>
+<%- include('end.ejs')%>
