@@ -1,4 +1,13 @@
 <%- include('head.ejs')%>
   <body>
    <%- include('navigation.ejs')%>
+   <main class="container">
+     <form class="user-form" action="/users" method="POST">
+      <div class="form-control">
+        <label for="username" class="form-control__label">Username:</label>
+        <input type="text" id="username" name="username" class='form-control__input'>
+      </div>
+      <button type="submit" class="user-form__submit">Submit</button>
+    </form>
+   </main>
 <%- include('end.ejs') %>
